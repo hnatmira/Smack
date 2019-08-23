@@ -21,6 +21,7 @@
 		FED644B323008BA3001F8292 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED644B223008BA3001F8292 /* Constants.swift */; };
 		FEE433C222FD95D70085F14A /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE433C122FD95D70085F14A /* ChannelVC.swift */; };
 		FEE433C422FD95ED0085F14A /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE433C322FD95ED0085F14A /* ChatVC.swift */; };
+		FEF19A6F23100BE9003D547C /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF19A6E23100BE9003D547C /* UserDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FED644B223008BA3001F8292 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FEE433C122FD95D70085F14A /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		FEE433C322FD95ED0085F14A /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		FEF19A6E23100BE9003D547C /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				FE1713BC230C40C5007647D3 /* AuthService.swift */,
+				FEF19A6E23100BE9003D547C /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				FEE433C422FD95ED0085F14A /* ChatVC.swift in Sources */,
 				FE29B69A230EBB410085FA84 /* RoundedButton.swift in Sources */,
 				FE0FE22C22FAEA8A00EDCF19 /* AppDelegate.swift in Sources */,
+				FEF19A6F23100BE9003D547C /* UserDataService.swift in Sources */,
 				FE1713BA230C0833007647D3 /* CreateAccountVC.swift in Sources */,
 				FE1713BD230C40C5007647D3 /* AuthService.swift in Sources */,
 				FE1713B8230C0325007647D3 /* LoginVC.swift in Sources */,

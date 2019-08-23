@@ -230,6 +230,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginBtnPressed:" destination="C0H-BE-ruQ" eventType="touchUpInside" id="pCa-I0-OMS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AD-w4-EJ8">
                                 <rect key="frame" x="62.5" y="336" width="250" height="30"/>
@@ -299,6 +302,8 @@
                         <viewLayoutGuide key="safeArea" id="JgI-uz-ZhS"/>
                     </view>
                     <connections>
+                        <outlet property="passTxt" destination="Cva-oH-WHs" id="elc-or-wij"/>
+                        <outlet property="usernameTxt" destination="2yg-w1-ay2" id="EHe-q6-8Op"/>
                         <segue destination="M1T-YK-bJs" kind="show" identifier="toCreateAccount" id="fLp-xA-8gc"/>
                     </connections>
                 </viewController>

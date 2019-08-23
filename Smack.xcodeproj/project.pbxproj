@@ -15,6 +15,8 @@
 		FE0FE24322FAFD6600EDCF19 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0FE24122FAFD6600EDCF19 /* SWRevealViewController.m */; };
 		FE1713B8230C0325007647D3 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1713B7230C0325007647D3 /* LoginVC.swift */; };
 		FE1713BA230C0833007647D3 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1713B9230C0833007647D3 /* CreateAccountVC.swift */; };
+		FE1713BD230C40C5007647D3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1713BC230C40C5007647D3 /* AuthService.swift */; };
+		FE29B69A230EBB410085FA84 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE29B699230EBB410085FA84 /* RoundedButton.swift */; };
 		FE69A63922FDAD3800317513 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE69A63822FDAD3800317513 /* GradientView.swift */; };
 		FED644B323008BA3001F8292 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED644B223008BA3001F8292 /* Constants.swift */; };
 		FEE433C222FD95D70085F14A /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE433C122FD95D70085F14A /* ChannelVC.swift */; };
@@ -35,6 +37,8 @@
 		FE0FE24222FAFD6600EDCF19 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		FE1713B7230C0325007647D3 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		FE1713B9230C0833007647D3 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		FE1713BC230C40C5007647D3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FE29B699230EBB410085FA84 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		FE69A63722FDA2C000317513 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		FE69A63822FDAD3800317513 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		FED644B223008BA3001F8292 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 		FE0FE22A22FAEA8A00EDCF19 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				FE1713BB230C40AE007647D3 /* Services */,
 				FED644B123008B79001F8292 /* Utilities */,
 				FEE433BF22FD95810085F14A /* Model */,
 				FEE433C022FD95880085F14A /* View */,
@@ -114,6 +119,14 @@
 				FE69A63722FDA2C000317513 /* Smack-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE1713BB230C40AE007647D3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FE1713BC230C40C5007647D3 /* AuthService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		FED644B123008B79001F8292 /* Utilities */ = {
@@ -146,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				FE69A63822FDAD3800317513 /* GradientView.swift */,
+				FE29B699230EBB410085FA84 /* RoundedButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,8 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEE433C422FD95ED0085F14A /* ChatVC.swift in Sources */,
+				FE29B69A230EBB410085FA84 /* RoundedButton.swift in Sources */,
 				FE0FE22C22FAEA8A00EDCF19 /* AppDelegate.swift in Sources */,
 				FE1713BA230C0833007647D3 /* CreateAccountVC.swift in Sources */,
+				FE1713BD230C40C5007647D3 /* AuthService.swift in Sources */,
 				FE1713B8230C0325007647D3 /* LoginVC.swift in Sources */,
 				FE69A63922FDAD3800317513 /* GradientView.swift in Sources */,
 				FEE433C222FD95D70085F14A /* ChannelVC.swift in Sources */,

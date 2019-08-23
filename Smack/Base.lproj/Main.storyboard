@@ -219,7 +219,7 @@
                                     <action selector="closePressed:" destination="C0H-BE-ruQ" eventType="touchUpInside" id="t4C-Rf-ky6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I68-4h-J83">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I68-4h-J83" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="286" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -376,7 +376,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4X-W8-nvn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4X-W8-nvn" customClass="RoundedButton" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -387,6 +387,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccntPressed:" destination="M1T-YK-bJs" eventType="touchUpInside" id="fgQ-wC-FWS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yS-ZN-cl6">
                                 <rect key="frame" x="62.5" y="433" width="250" height="30"/>
@@ -396,6 +399,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <state key="normal" title="Generate background color"/>
+                                <connections>
+                                    <action selector="pickBGColorPressed:" destination="M1T-YK-bJs" eventType="touchUpInside" id="NVr-Kr-frd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5o3-nC-VpG">
                                 <rect key="frame" x="137.5" y="299" width="100" height="130"/>
@@ -404,6 +410,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <state key="normal" title="Choose avatar"/>
+                                <connections>
+                                    <action selector="pickAvatarPressed:" destination="M1T-YK-bJs" eventType="touchUpInside" id="WfI-ql-yAI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aah-h2-79Y">
                                 <rect key="frame" x="327" y="28" width="28" height="28"/>
@@ -442,6 +451,10 @@
                         <viewLayoutGuide key="safeArea" id="cWm-hQ-2be"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="32u-7u-cQK" id="DPJ-2e-Ph2"/>
+                        <outlet property="passTxt" destination="udc-Dh-Vlv" id="fm5-sm-iUM"/>
+                        <outlet property="userImg" destination="0zQ-QT-uer" id="pos-xo-dVS"/>
+                        <outlet property="usernameTxt" destination="32u-7u-cQK" id="eBj-jb-Y1T"/>
                         <segue destination="ly5-XJ-UWY" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSeque:" id="I7A-dz-DiX"/>
                     </connections>
                 </viewController>

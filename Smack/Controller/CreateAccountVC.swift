@@ -24,6 +24,13 @@ class CreateAccountVC: UIViewController {
         super.viewDidLoad()
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        if userDataService.instance.avatarName != "" {
+            userImg.image = UIImage(named: userDataService.instance.avatarName)
+            avatarName = userDataService.instance.avatarName
+        }
+    }
+
     @IBAction func createAccntPressed(_ sender: Any) {
         guard let email = emailTxt.text , emailTxt.text != "" else { return }
         guard let pass = passTxt.text , passTxt.text != "" else { return }
@@ -50,6 +57,7 @@ class CreateAccountVC: UIViewController {
     }
 
     @IBAction func pickAvatarPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
     }
 
     @IBAction func closeBtnPressed(_ sender: Any) {

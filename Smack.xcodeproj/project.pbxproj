@@ -17,6 +17,8 @@
 		FE1713BA230C0833007647D3 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1713B9230C0833007647D3 /* CreateAccountVC.swift */; };
 		FE1713BD230C40C5007647D3 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1713BC230C40C5007647D3 /* AuthService.swift */; };
 		FE29B69A230EBB410085FA84 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE29B699230EBB410085FA84 /* RoundedButton.swift */; };
+		FE5C032F2317B0DD005D688B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5C032D2317B0DD005D688B /* ProfileVC.swift */; };
+		FE5C03302317B0DD005D688B /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE5C032E2317B0DD005D688B /* ProfileVC.xib */; };
 		FE6553932312721600A59DC4 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6553922312721600A59DC4 /* CircleImage.swift */; };
 		FE69A63922FDAD3800317513 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE69A63822FDAD3800317513 /* GradientView.swift */; };
 		FED644B323008BA3001F8292 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED644B223008BA3001F8292 /* Constants.swift */; };
@@ -43,6 +45,8 @@
 		FE1713B9230C0833007647D3 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		FE1713BC230C40C5007647D3 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		FE29B699230EBB410085FA84 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		FE5C032D2317B0DD005D688B /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		FE5C032E2317B0DD005D688B /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		FE6553922312721600A59DC4 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		FE69A63722FDA2C000317513 /* Smack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Smack-Bridging-Header.h"; sourceTree = "<group>"; };
 		FE69A63822FDAD3800317513 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
@@ -104,6 +108,7 @@
 		FE0FE22A22FAEA8A00EDCF19 /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				FE5C03312317B100005D688B /* XIBs */,
 				FE1713BB230C40AE007647D3 /* Services */,
 				FED644B123008B79001F8292 /* Utilities */,
 				FEE433BF22FD95810085F14A /* Model */,
@@ -138,6 +143,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		FE5C03312317B100005D688B /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				FE5C032E2317B0DD005D688B /* ProfileVC.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		FED644B123008B79001F8292 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +167,7 @@
 				FE1713B7230C0325007647D3 /* LoginVC.swift */,
 				FE1713B9230C0833007647D3 /* CreateAccountVC.swift */,
 				FEF19A7223103A4D003D547C /* AvatarPickerVC.swift */,
+				FE5C032D2317B0DD005D688B /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5C03302317B0DD005D688B /* ProfileVC.xib in Resources */,
 				FE0FE23622FAEA8B00EDCF19 /* LaunchScreen.storyboard in Resources */,
 				FE0FE23E22FAF13600EDCF19 /* Assets.xcassets in Resources */,
 				FE0FE23122FAEA8A00EDCF19 /* Main.storyboard in Resources */,
@@ -295,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5C032F2317B0DD005D688B /* ProfileVC.swift in Sources */,
 				FEE433C422FD95ED0085F14A /* ChatVC.swift in Sources */,
 				FEF19A7323103A4D003D547C /* AvatarPickerVC.swift in Sources */,
 				FE29B69A230EBB410085FA84 /* RoundedButton.swift in Sources */,

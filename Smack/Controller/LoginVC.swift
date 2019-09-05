@@ -13,10 +13,11 @@
     //Outputs
     @IBOutlet weak var usernameTxt: UITextField!
     @IBOutlet weak var passTxt: UITextField!
-
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
     }
 
     @IBAction func closePressed(_ sender: Any) {
@@ -28,13 +29,27 @@
     }
 
     @IBAction func loginBtnPressed(_ sender: Any) {
+        spinner.isHidden = false
+        spinner.startAnimating()
         guard let email = usernameTxt.text, usernameTxt.text != "" else { return }
         guard let pass = passTxt.text, passTxt.text != "" else { return }
 
         AuthService.instance.loginUser(email: email, password: pass) { (success) in
             if success {
-                print("Logged in user!")
+                AuthService.instance.findUserByEmail(completion: { (success) in
+                    if success {
+                        NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
+                        self.spinner.stopAnimating()
+                        self.spinner.isHidden = true
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                })
             }
         }
+    }
+    func setupView() {
+        spinner.isHidden = true
+        usernameTxt.attributedPlaceholder = NSAttributedString(string: "username", attributes: [NSAttributedString.Key.foregroundColor: smackPurplePlaceholder])
+        passTxt.attributedPlaceholder = NSAttributedString(string: "password", attributes: [NSAttributedString.Key.foregroundColor: smackPurplePlaceholder])
     }
  }

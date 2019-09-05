@@ -15,6 +15,7 @@ let BASE_URL = "https://chattychatchatchat.herokuapp.com/v1/"
 let URL_REGISTR = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_ADD_USER = "\(BASE_URL)user/add"
+let URL_USER_BY_EMAIL = "\(BASE_URL)/user/byEmail/"
 
 //Colors
 let smackPurplePlaceholder = #colorLiteral(red: 0.3266413212, green: 0.4215201139, blue: 0.7752227187, alpha: 0.5)
@@ -38,7 +39,7 @@ let HEADER = [
     "Content-Type": "application/json; charset=utf-8"
 ]
 
-let AUTHORIZATION_AND_CONTENT = [
+let AUTHORIZATION_AND_CONTENT_HEADER = [
     "Content-Type": "application/json; charset=utf-8",
     "Authorization": "Bearer \(AuthService.instance.authToken)"
 ]

@@ -286,6 +286,10 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="eJ1-8i-t5T">
+                                <rect key="frame" x="169" y="250" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -294,16 +298,19 @@
                             <constraint firstItem="KpK-xK-web" firstAttribute="top" secondItem="JgI-uz-ZhS" secondAttribute="top" constant="60" id="CXd-FE-zqf"/>
                             <constraint firstItem="I68-4h-J83" firstAttribute="top" secondItem="dQr-om-7SK" secondAttribute="bottom" constant="40" id="Ozy-RI-gvo"/>
                             <constraint firstItem="dQr-om-7SK" firstAttribute="centerX" secondItem="1aQ-kC-BWA" secondAttribute="centerX" id="Ukz-EC-sK8"/>
+                            <constraint firstItem="eJ1-8i-t5T" firstAttribute="centerX" secondItem="1aQ-kC-BWA" secondAttribute="centerX" id="VcD-lY-gNd"/>
                             <constraint firstItem="9it-XT-18P" firstAttribute="top" secondItem="JgI-uz-ZhS" secondAttribute="top" constant="8" id="lds-b1-ud3"/>
                             <constraint firstItem="I68-4h-J83" firstAttribute="centerX" secondItem="1aQ-kC-BWA" secondAttribute="centerX" id="oke-Fa-KCh"/>
                             <constraint firstItem="1AD-w4-EJ8" firstAttribute="top" secondItem="I68-4h-J83" secondAttribute="bottom" id="sTt-90-e6v"/>
                             <constraint firstItem="1AD-w4-EJ8" firstAttribute="centerX" secondItem="1aQ-kC-BWA" secondAttribute="centerX" id="vs7-bI-97K"/>
+                            <constraint firstItem="eJ1-8i-t5T" firstAttribute="centerY" secondItem="1aQ-kC-BWA" secondAttribute="centerY" constant="-65" id="vwH-Zb-kbU"/>
                             <constraint firstItem="KpK-xK-web" firstAttribute="centerX" secondItem="1aQ-kC-BWA" secondAttribute="centerX" id="zWJ-Z7-JN4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JgI-uz-ZhS"/>
                     </view>
                     <connections>
                         <outlet property="passTxt" destination="Cva-oH-WHs" id="elc-or-wij"/>
+                        <outlet property="spinner" destination="eJ1-8i-t5T" id="Sot-sm-fe7"/>
                         <outlet property="usernameTxt" destination="2yg-w1-ay2" id="EHe-q6-8Op"/>
                         <segue destination="M1T-YK-bJs" kind="show" identifier="toCreateAccount" id="fLp-xA-8gc"/>
                     </connections>
